@@ -36,4 +36,6 @@ jobs:
           with:
             run: npm run deploy
           env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             XMIT_KEY: ${{ secrets.XMIT_KEY }}
+            PUBLISH_DIR: notebook
