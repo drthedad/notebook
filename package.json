@@ -1,0 +1,16 @@
+{
+  "name": "LGHq-Nations-notebook",
+  "version": "6.6.6",
+  "description": "Notebooks",
+  "main": "index.html",
+  "scripts": {
+    "build": "ws -p 3000 -r '/docsify-notebooks/(.*) -> /$1' --open",
+    "deploy": "npm run build && xmit awenations.xmit.dev"
+  },
+  "author": "LGHq-Nations",
+  "license": "MIT",
+  "devDependencies": {
+    "@xmit.co/xmit": "^0.5.0-0",
+    "local-web-server": "^4.2.1"
+  }
+}
