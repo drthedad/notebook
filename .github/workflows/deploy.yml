@@ -39,3 +39,5 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             XMIT_KEY: ${{ secrets.XMIT_KEY }}
             PUBLISH_DIR: notebook
+            PUBLISH_BRANCH: main
+            CNAME: awenations.xmit.dev
