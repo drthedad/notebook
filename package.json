@@ -4,12 +4,13 @@
   "description": "Notebooks",
   "main": "index.html",
   "scripts": {
-    "build": "npm run serve notebook",
+    "build": "docsify serve notebook",
     "deploy": "npm run build && npx xmit notebook/ awenations.xmit.dev@279"
   },
   "author": "LGHq-Nations",
   "license": "MIT",
   "devDependencies": {
+    "docsify-cli": "latest",
     "@xmit.co/xmit": "^0.5.0-0",
     "local-web-server": "^4.2.1"
   }
