@@ -4,7 +4,7 @@
   "description": "Notebooks",
   "main": "index.html",
   "scripts": {
-    "build": "docsify serve notebook",
+    "build": "docsify init .",
     "deploy": "npm run build && xmit awenations.xmit.dev"
   },
   "author": "LGHq-Nations",
