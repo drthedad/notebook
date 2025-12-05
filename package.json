@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "ws -p 3000 -r '/notebooks/(.*) -> /$1' --open",
-    "deploy": "npm run build && xmit awenations.xmit.dev"
+    "deploy": "npm run build && xmit ./notebook awenations.xmit.dev@279"
   },
   "author": "LGHq-Nations",
   "license": "MIT",
