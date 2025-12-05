@@ -4,10 +4,10 @@ on:
    push:
       branches:
          - main
-   pull_request:
+   workflow_dispatch:
 
 permissions:
-   contents: write
+   contents: read
    pages: write
    id-token: write
 
@@ -32,6 +32,8 @@ jobs:
           run: npm ci
 
         - name: Deploy
-          run: npm run deploy
+          uses: peaceiris/actions-gh-pages@v4
+          with:
+            run: npm run deploy
           env:
             XMIT_KEY: ${{ secrets.XMIT_KEY }}
