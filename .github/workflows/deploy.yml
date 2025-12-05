@@ -33,10 +33,8 @@ jobs:
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v4
           with:
-            run: npm run deploy
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            XMIT_KEY: ${{ secrets.XMIT_KEY }}
-            PUBLISH_DIR: notebook/
-            PUBLISH_BRANCH: main
-            CNAME: awenations.xmit.dev
+             github-token: ${{ secrets.GITHUB_TOKEN }}
+             xmit_key: ${{ secrets.XMIT_KEY }}
+             publish_dir: notebook/
+             publish_branch: main
+             cname: awenations.xmit.dev
