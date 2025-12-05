@@ -1,3 +1,0 @@
-# Contents of NoteBook
-
-
