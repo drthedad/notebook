@@ -4,8 +4,8 @@
   "description": "Notebooks",
   "main": "index.html",
   "scripts": {
-    "build": "docsify serve notebook",
-    "deploy": "npm run build && npx xmit notebook/ awenations.xmit.dev@279"
+    "build": "docsify serve .",
+    "deploy": "npm run build && xmit awenations.xmit.dev"
   },
   "author": "LGHq-Nations",
   "license": "MIT",
